@@ -1,0 +1,2 @@
+module BitcoinHiragana
+end

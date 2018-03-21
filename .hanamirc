@@ -1,0 +1,3 @@
+project=bitcoin_hiragana
+test=minitest
+template=erb
