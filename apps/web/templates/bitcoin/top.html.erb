@@ -1,0 +1,25 @@
+<h1>bitcoin_top</h1>
+<%=
+  form_for :bitcoin, '/bitcoin/toHiragana' do
+    div class: 'input' do
+      label      :hexTx
+      text_area  :hexTx
+    end
+
+    div class: 'controls' do
+      submit 'Encode to Hiragana'
+    end
+  end
+%>
+<%=
+  form_for :bitcoin, '/bitcoin/toHiragana' do
+    div class: 'input' do
+      label      :hiraganaTx
+      text_area  :hiraganaTx
+    end
+
+    div class: 'controls' do
+      submit 'Encode to Hex'
+    end
+  end
+%>
