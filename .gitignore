@@ -5,3 +5,4 @@ vendor/bundle
 /tmp
 /.env.development
 /.env.test
+/.idea
