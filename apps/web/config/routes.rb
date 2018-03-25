@@ -4,6 +4,6 @@
 # Example:
 # get '/hello', to: ->(env) { [200, {}, ['Hello from Hanami!']] }
 
-root to: 'home#index'
+root to: 'bitcoin#top'
 get '/bitcoin/top', to: 'bitcoin#top'
 post '/bitcoin/toHiragana', to: 'bitcoin#toHiragana'

@@ -1,25 +1,34 @@
-<h1>bitcoin_top</h1>
-<%=
-  form_for :bitcoin, '/bitcoin/toHiragana' do
-    div class: 'input' do
-      label      :hexTx
-      text_area  :hexTx
-    end
+<div class="container">
+  <div class="row">
+    <div class="columns">
+      <%=
+        form_for :bitcoin, '/bitcoin/toHiragana' do
+          div class: 'input' do
+            label      :hexTx
+            text_area  :hexTx, class: 'u-full-width', style: "height: 160px"
+          end
 
-    div class: 'controls' do
-      submit 'Encode to Hiragana'
-    end
-  end
-%>
-<%=
-  form_for :bitcoin, '/bitcoin/toHiragana' do
-    div class: 'input' do
-      label      :hiraganaTx
-      text_area  :hiraganaTx
-    end
+          div class: 'controls' do
+            submit 'Encode in Hiragana'
+          end
+        end
+      %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="columns">
+      <%=
+        form_for :bitcoin, '/bitcoin/toHiragana' do
+          div class: 'input' do
+            label      :hiraganaTx
+            text_area  :hiraganaTx, class: 'u-full-width', style: "height: 160px"
+          end
 
-    div class: 'controls' do
-      submit 'Encode to Hex'
-    end
-  end
-%>
+          div class: 'controls' do
+            submit 'Decode Hiragana transaction'
+          end
+        end
+      %>
+    </div>
+  </div>
+</div>

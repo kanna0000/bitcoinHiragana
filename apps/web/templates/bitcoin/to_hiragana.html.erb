@@ -1,5 +1,26 @@
-<h1>to_hiragana</h1>
-<h3>Hex transaction</h3>
-<p><%= hexTx %></p>
-<h3>Hiragana transaction</h3>
-<p><%= hiraganaTx %></p>
+<div class="container">
+  <div class="row">
+    <div class="columns">
+      <%=
+        form_for :bitcoin, '/bitcoin/toHiragana' do
+          div class: 'input' do
+            label      :hexTx
+            text_area  :hexTx, hexTx, class: 'u-full-width', style: "height: 140px", disabled: "true"
+          end
+        end
+      %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="columns">
+      <%=
+        form_for :bitcoin, '/bitcoin/toHiragana' do
+          div class: 'input' do
+            label      :hiraganaTx
+            text_area  :hiraganaTx, hiraganaTx, class: 'u-full-width', style: "height: 140px", disabled: "true"
+          end
+        end
+      %>
+    </div>
+  </div>
+</div>
